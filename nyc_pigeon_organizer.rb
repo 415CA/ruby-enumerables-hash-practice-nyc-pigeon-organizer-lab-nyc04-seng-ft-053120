@@ -8,10 +8,13 @@ def nyc_pigeon_organizer(pigeon_data)
         if new_pigeon_data[name] == nil
           new_pigeon_data = {}
         end
+
         if new_pigeon_data[name][element_name] == nil
           new_pigeon_data[name][element_name] = []
         end
-        new_pigeon_data[name][element_name].push(element_value).to_s
+
+        new_pigeon_data[name][element_name].push(element_value.to_s)
+
       end
     end
   end
