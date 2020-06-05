@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(pigeon_data)
           new_pigeon_data[name][element_name] = []
         end
 
-        new_pigeon_data[name][element_name].push(element_value.to_s)
+        new_pigeon_data[name][element_name].push(element_value).to_s
 
       end
     end
