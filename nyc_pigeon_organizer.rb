@@ -4,6 +4,7 @@ def nyc_pigeon_organizer(pigeon_data)
   new_pigeon_data = {}
   pigeon_data.each do |element_name, element|
     element.each do |element_value, pigeon_ids|
+      binding.pry
       pigeon_ids.each do |name|
         if new_pigeon_data[name] == nil
           new_pigeon_data = {}
