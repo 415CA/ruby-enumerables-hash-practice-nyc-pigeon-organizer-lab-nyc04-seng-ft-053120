@@ -22,7 +22,6 @@ pigeon_data = {
 def nyc_pigeon_organizer(pigeon_data)
   new_pigeon_data = {}
   pigeon_data.each do |element_name, element|
-    binding.pry
     element.each do |element_value, pigeon_id|
       name.each do |name|
         new_pigeon_data[name] = {}
