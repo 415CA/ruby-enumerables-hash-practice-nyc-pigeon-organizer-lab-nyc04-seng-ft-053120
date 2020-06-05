@@ -2,7 +2,6 @@ require 'pry'
 
 def nyc_pigeon_organizer(pigeon_list)
   new_pigeon_data = {}
-
   pigeon_list.each do |element_name, element|
     element.each do |element_value, pigeon_id|
       pigeon_id.each do |name|
