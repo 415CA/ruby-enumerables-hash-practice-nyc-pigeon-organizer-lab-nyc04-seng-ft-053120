@@ -5,8 +5,12 @@ def nyc_pigeon_organizer(pigeon_data)
   pigeon_data.each do |element_name, element|
     element.each do |element_value, pigeon_id|
       pigeon_id.each do |name|
-        new_pigeon_data[name] || name = {}
-        new_pigeon_data[name][element_name] || []
+        if new_pigeon_data[name] == nil
+          new_pigeon_data = {}
+        end
+        if new_pigeon_data[name][element_name] == nil
+          new_pigeon_data[name][element_name] =[]
+        end
         new_pigeon_data[name][element_name].push(element_value).to_s
       end
     end
