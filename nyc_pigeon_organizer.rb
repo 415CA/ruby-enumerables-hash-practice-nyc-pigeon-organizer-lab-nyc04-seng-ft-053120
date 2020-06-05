@@ -20,12 +20,13 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(pigeon_data)
+  new_pigeon_data = {}
   pigeon_data.each do |element_name, element|
     element.each do |element_value, names|
       names.each do
-        pigeon_data[name] = {}
-        pigeon_data[name][element_name] || []
-        pigeon_data[name][element_name].push(element_value).to_s
+        new_pigeon_data[name] = {}
+        new_pigeon_data[name][element_name] || []
+        new_pigeon_data[name][element_name].push(element_value).to_s
       end
     end
   end
