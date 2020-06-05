@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(pigeon_data)
       pigeon_ids.each do |name|
         if new_pigeon_data[name] == nil
           new_pigeon_data = {}
+                binding.pry
         end
         if new_pigeon_data[name][element_name] == nil
           new_pigeon_data[name][element_name] = []
